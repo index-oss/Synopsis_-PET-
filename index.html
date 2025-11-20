@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet & Animal Directory</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>🐾 Pet & Animal Directory</h1>
+        <p>Discover amazing pets and animals from around the world</p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="search-section">
+        <div class="search-container">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search for pets and animals..."
+          />
+          <button id="searchBtn">Search</button>
+        </div>
+
+        <div class="filters">
+          <select id="typeFilter">
+            <option value="">All Types</option>
+            <option value="dog">Dogs</option>
+            <option value="cat">Cats</option>
+            <option value="bird">Birds</option>
+            <option value="fish">Fish</option>
+            <option value="reptile">Reptiles</option>
+            <option value="rabbit">Rabbits</option>
+            <option value="hamster">Hamsters</option>
+            <option value="exotic">Exotic</option>
+          </select>
+
+          <select id="sizeFilter">
+            <option value="">All Sizes</option>
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+          </select>
+
+          <select id="activityFilter">
+            <option value="">Activity Level</option>
+            <option value="low">Low</option>
+            <option value="moderate">Moderate</option>
+            <option value="high">High</option>
+          </select>
+
+          <select id="careFilter">
+            <option value="">Care Level</option>
+            <option value="easy">Easy</option>
+            <option value="moderate">Moderate</option>
+            <option value="difficult">Difficult</option>
+          </select>
+
+          <button id="clearFilters">Clear Filters</button>
+        </div>
+      </section>
+
+      <section class="stats">
+        <div class="stat-card">
+          <h3 id="totalCount">0</h3>
+          <p>Total Animals</p>
+        </div>
+        <div class="stat-card">
+          <h3 id="filteredCount">0</h3>
+          <p>Filtered Results</p>
+        </div>
+      </section>
+
+      <section class="results-section">
+        <div id="resultsContainer" class="results-grid">
+          <!-- Animal cards will be populated here -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Pet & Animal Directory. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
